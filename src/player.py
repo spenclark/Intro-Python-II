@@ -2,6 +2,12 @@
 # currently.
 
 
+class Player:
+    def __init__(self, name, starting_room):
+        self.name = name
+        self.current_room = starting_room
+
+
 # class Player:
 #     """"
 #         This call is used to build a player type. A player can have many skills assigned to thier object -- and also have many items in their inventory.
@@ -53,8 +59,3 @@
 #     def __str__(self):
 #         s = f"{self.name} - {self.value} - {self.effect}"
 #         return s
-
-class Player:
-    def __init__(self, name, starting_room):
-        self.name = name
-        self.current_room = starting_room
